@@ -1,3 +1,6 @@
+* {
+  word-wrap: break-word;
+}
 .slider-section {
   position: absolute;
   top: 50px;
@@ -94,10 +97,10 @@
 }
 .h {
   width: 1rem;
-  height: 1rem;
+  /* height: 1rem; */
 }
 .v {
-  width: 1rem;
+  /* width: 1rem; */
   height: 1rem;
 }
 
@@ -132,12 +135,12 @@
   text-align: center;
 }
 
-
 .dishes-sections {
   padding: 1rem 1.5rem;
 }
 
 .dishes-card {
+  padding: 0 1rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -146,6 +149,7 @@
 }
 .card {
   width: 20rem;
+  cursor: pointer;
   border-radius: 15px;
   padding: 1rem 0;
   margin: 15px 0;
@@ -183,19 +187,54 @@
   font-size: 2.3rem;
   width: 30%;
 }
+
+/* about sections */
 .about-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
   align-items: center;
+  /* justify-content: space-evenly; */
 }
 .img-section {
   width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Catagories-images {
+  display: flex;
+  flex-direction: row;
+  padding: 0 3rem;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+.content-section {
+  width: 50%;
+  padding: 5px 7rem;
+}
+.catagories-section {
+  padding: 2rem 5rem;
+}
+.catagories-section-title {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.content-section .content-description {
+  /* width: 50%; */
+  font-size: 1.2rem;
+  color: #555555;
+}
+.content-title h2 {
+  font-size: 2.5em;
 }
 .img-section img {
   width: 50%;
-  height: 50%;
+}
+.cat-img {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -216,8 +255,32 @@
   }
   .section-title {
     font-size: 1.5rem;
+    word-wrap: break-word;
   }
   .card {
     width: 100%;
+  }
+  .about-section {
+    flex-direction: column;
+  }
+  .content-section {
+    padding: 10px 5px;
+    width: 100%;
+  }
+  .img-section {
+    width: 100%;
+  }
+  .content-title h2 {
+    font-size: 2rem;
+  }
+  .Catagories-images {
+    padding: 2rem 0;
+    flex-direction: column;
+  }
+  .cat-img img {
+    width: 100%;
+  }
+  .catagories-section {
+    padding: 2rem 0;
   }
 }
